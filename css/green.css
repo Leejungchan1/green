@@ -1,0 +1,146 @@
+@charset "UTF-8";
+
+/* wrap 영역 */
+#wrap{}
+
+/* header 영역 */
+#header{
+    width: 1920px;
+    height: 100px;
+    margin: 0 auto;
+    /* background-color: aqua; */
+}
+
+/* h_inner 영역 */
+.h_inner{
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    /* background-color: aqua; */
+    /* overflow: hidden; */
+}
+
+.logo{
+    float: left;
+    height: 100px;
+}
+.logo a{
+    display: block;
+    height: 100px;
+    line-height: 100px;
+    
+}
+
+.t_title{
+    float: right;
+    /* border: 1px solid black; */
+    height: 100px;
+}
+
+.t_title > li{
+    padding: 5px 0;
+}
+
+.t_title > li > h1{
+    float: right;
+}
+
+.t_title > h2{
+    margin-top: 10px;
+}
+
+.t_link{
+    float: right;
+    height: 100px;
+}
+.t_link > li{
+    display: inline-block;
+    height: 100px;
+    margin-top: 25px;
+
+}
+.t_link > li > a{
+    display: block;
+    height: 42px;
+    text-indent: -9999px;
+    /* border: 1px solid black; */
+    margin-right: 10px;
+}
+
+.h_img1 > a{
+    background: url(../img/10002.png)no-repeat;
+    width: 42px;
+    background-size: 100%;
+}
+.h_img2 > a{
+    background: url(../img/10004.png)no-repeat;
+    width: 42px;
+    background-size: 100%;
+}
+.h_img3 > a{
+    background: url(../img/10007.png)no-repeat;
+    width: 42px;
+    background-size: contain;
+    
+}
+
+/* nav 영역 */
+.nav{
+    width: 1920px;
+    margin: 0 auto;
+}
+
+/* main 영역 */
+.main{
+    width: 1200px;
+    margin: 0 auto;
+
+}
+.main > li{
+    float: left;
+    /* padding: 0 25px; */
+    /* background-color: aqua; */
+    position: relative;
+    
+}
+.main > li > a{
+    display: block;
+    width: 150px;
+    height: 60px;
+    line-height: 60px;
+    background-color: azure;
+    text-align: center;
+}
+
+.main:hover .sub{
+    display: block;
+}
+
+.sub{
+    padding: 10px;
+    position: absolute;
+    left: 0;
+    top: 60px;
+    display: none;
+}
+.sub li{
+
+}
+.sub li a{
+    display: block;
+    margin-bottom: 10px;
+    /* border: 1px solid black; */
+    
+}
+
+.sub li:hover a{
+    color: green;
+}
+
+/* section 영역 */
+#section{}
+
+/* img_slide 영역 */
+.img_slide{}
+.img_slide a{}
+.img_slide a img{}
