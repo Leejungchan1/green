@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+body{
+    position: relative;
+}
+
 /* wrap 영역 */
 #wrap{}
 
@@ -92,11 +96,12 @@
 /* main 영역 */
 .main{
     width: 1200px;
+    height: 60px;
     margin: 0 auto;
 
 }
 .main > li{
-    float: left;
+    display: inline-block;
     /* padding: 0 25px; */
     /* background-color: aqua; */
     position: relative;
@@ -104,23 +109,44 @@
 }
 .main > li > a{
     display: block;
-    width: 150px;
+    width: 140px;
     height: 60px;
     line-height: 60px;
     background-color: azure;
     text-align: center;
 }
 
+.main > li > a:hover{
+    background-color: greenyellow;
+}
+
 .main:hover .sub{
     display: block;
 }
 
+#header:hover .sub_bg{display: block;}
+
+.sub_bg{
+    width: 1920px;
+    height: 400px;
+    background: white;
+    position: absolute;
+    top: 160px;
+    left: 0;
+    z-index: 4;
+    display: none;
+}
+
 .sub{
+    width: 100%;
     padding: 10px;
     position: absolute;
     left: 0;
     top: 60px;
     display: none;
+    z-index: 5;
+    text-align: center;
+    /* border: 1px solid brown; */
 }
 .sub li{
 
@@ -138,14 +164,14 @@
 
 /* section 영역 */
 #section_img{
-    width: 1920;
+    width: 1920px;
     height: 500px;
+    margin: 0 auto;
 }
 
 /* img_slide 영역 */
-.img_slide{
-    margin: 0 auto;
-}
+.img_slide{}
+
 .img_slide a{
     display: block;
 }
@@ -365,15 +391,15 @@
 /* s_inner_4 영역 */
 .s_inner_4{
     width: 1200px;
-    height: 490px;
+    height: 400px;
     margin: 0 auto;
-    background-color: aqua;
+    /* background-color: aqua; */
 }
 
 /* notice 영역 */
 .notice{
     float: left;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     margin-right: 20px;
 }
 
@@ -388,9 +414,14 @@
     border-right: none;
 }
 
+.n_top h3 a:hover{
+    color: gray;
+}
+
+
 .n_top h3 a{
     display: block;
-    margin: 20px 20px 20px 0;
+    margin: 10px 10px 10px 0;
     padding-right: 25px;
     border-right: 1px dotted black;
     font-size: 30px;
@@ -406,8 +437,8 @@
 
 /* movi 영역 */
 .movi{
-    float: left;
-    border: 1px solid black;
+    float: right;
+    /* border: 1px solid black; */
 }
 
 .m_top{}
@@ -418,21 +449,163 @@
 .m_top h3:nth-child(2) a{
     border-right: none;
 }
+
+.m_top h3 a:hover{
+    color: gray;
+}
+
 .m_top h3 a{
     display: block;
-    margin: 20px 20px 20px 0;
+    margin: 10px 10px 10px 0;
     padding-right: 25px;
     border-right: 1px dotted black;
     font-size: 30px;
 }
 
-.m_bootom{}
+.m_bootom{
+    margin-top: 15px;
+}
+.m_bootom img{}
 
+/* footer 영역 */
+#footer{
+    background-color: gray;
+    color: white;
+}
 
+/* f_t_contents 영역 */
+.f_t_contents{
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
 
+.f_left{}
 
+.f_left p{
+    float: left;
+    margin: 20px 0 20px 0;
+}
 
+.f_left p a{
+    display: block;
+    margin: 0 10px 0 10px;
+    border-right: 1px dotted black;
+    padding-right: 25px;
+}
 
+.f_left p a span{
+    color: red;
+}
+
+.r_right{
+
+}
+
+.f_link{
+    float: right;
+    height: 42px;
+}
+.f_link > li{
+    display: inline-block;
+    height: 42px;
+    margin-top: 7px;
+
+}
+.f_link > li > a{
+    display: block;
+    height: 42px;
+    text-indent: -9999px;
+    /* border: 1px solid black; */
+    margin-right: 10px;
+}
+
+/* f_b_contents 영역 */
+.f_b_contents{
+    width: 1200px;
+    height: 210px;
+    margin: 0 auto;
+}
+
+.bottom_f_l{
+    float: left;
+}
+.bottom_f_l p{
+    margin: 10px 0 10px 0;
+}
+
+.bottom_f_r{
+    float: right;
+    line-height: 199px;
+}
+.bottom_f_r img{
+    width: 150px;
+    
+}
+
+/* fixed 영역 */
+
+#fixed{
+    width: 120px;
+    height: 650px;
+    /* border: 1px solid red; */
+    border-radius: 25px;
+    position: fixed;
+    left: calc(50% + (1200px / 2) + 100px);
+    top: 170px;
+    border-radius: 25%px;
+    background-color: black;
+    z-index: 6;
+}
+
+#fixed p{
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    padding: 10px 0 10px 0;
+
+}
+
+#fixed a{
+    width: 120px;
+    height: 120px;
+    background-color: cornflowerblue;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    border-bottom: 1px solid white;
+    
+}
+
+#fixed a:last-child{
+    border-bottom: none;
+}
+
+#fixed a img{
+    margin-top: 20px;
+}
+
+.img_1{
+    width: 50px;
+    margin-bottom: 3px;
+}
+
+#fixed a p{
+    font-size: 15px;
+}
+
+#fixed a:last-child{
+    height: 80px;
+    
+}
+
+.f_top{
+    line-height: 58px;
+}
+
+#fixed a:hover{
+    background-color: skyblue;
+}
 
 
 
