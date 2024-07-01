@@ -101,7 +101,7 @@ body{
 
 }
 .main > li{
-    display: inline-block;
+    float: left;
     /* padding: 0 25px; */
     /* background-color: aqua; */
     position: relative;
@@ -109,7 +109,7 @@ body{
 }
 .main > li > a{
     display: block;
-    width: 140px;
+    width: 150px;
     height: 60px;
     line-height: 60px;
     background-color: azure;
