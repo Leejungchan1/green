@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body{
-    position: relative;
+    /* position: relative; */
 }
 
 /* wrap 영역 */
@@ -20,7 +20,7 @@ body{
     height: 100px;
     margin: 0 auto;
     /* background-color: aqua; */
-    /* overflow: hidden; */
+    /* overflow: hidden; */ 
 }
 
 .logo{
@@ -124,7 +124,7 @@ body{
     display: block;
 }
 
-#header:hover .sub_bg{display: block;}
+.main:hover .sub_bg{display: block;}
 
 .sub_bg{
     width: 1920px;
@@ -160,6 +160,7 @@ body{
 
 .sub li:hover a{
     color: green;
+    text-shadow: 0 0 8px green;
 }
 
 /* section 영역 */
